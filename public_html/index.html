@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>La DropBox du LPFP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" type="text/css" href="resetMeyer.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="core.css" media="screen" />
+        
+    </head>
+    <body>
+        <div id="mainPage"> <!-- Page -->
+            
+            <header> <!-- Header -->
+                <a href="./files.html" title="Home"> 
+                    <img id="logo" src="./logo.png" alt="logo"/>
+                </a>
+                
+                <nav id="mainMenu" >
+                    <ul>
+                        <li><a href="./home.html" title="Home">Home</a></li>
+                        <li><a href="./files.html" title="Files">Files</a></li>
+                        <li><a href="./bookmarks.html" title="Bookmarks">Bookmarks</a></li>
+                        <li><a href="./chat.html" title="Chat">Chat</a></li>
+                        <li><a href="./radio.html" title="Radio">Radio</a></li>
+                    </ul>                    
+                </nav>
+            </header>   
+            
+            <div id="content"> <!-- Section -->
+                <div id="fileUpload"> <!-- Zone Envoi Fichier -->
+                    <form action="index.html" method="POST" enctype="multipart/form-data"> 
+                        <input type="file" name="file"/>                            
+                            <button type="submit" name="btn_submit"> Envoi du fichier</button>            
+                    </form>
+                            
+                </div>
+                
+                <table id="tableUploadedFile">
+                    <thead>
+                        <tr>
+                            <th><a href="#" title="Pseudo">Pseudo</a></th>        
+                            <th><a href="#" title="NomFichier">Nom du fichier</a></th>        
+                            <th><a href="#" title="Type">Type de Fichier</a></th>        
+                            <th><a href="#" title="Taille">Taille</a></th>        
+                            <th><a href="#" title="Date">Date</a></th>        
+                            <th>Download</th>        
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>                 
+                            <td>Pseudo</td>                 
+                            <td>Nom du Fichier</td>                 
+                            <td>Type de fichier</td>                 
+                            <td>Taille</td>                 
+                            <td>Date</td>                 
+                            <td>Download</td>                 
+                            <td>Delete</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                
+                <div> <!-- Zone Bookmarks -->
+                                        
+                </div>
+
+                <div> <!-- Zone Files -->
+                                        
+                </div>
+                
+                <div> <!-- Zone Chat -->
+                                        
+                </div>
+                
+                
+                
+            </div>
+            
+            <footer id="mainFooter"> <!-- footer -->
+                <a href="#" title="Chat"> CHAT </a>   
+            </footer>            
+        </div>
+    </body>
+</html>
