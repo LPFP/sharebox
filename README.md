@@ -1,0 +1,4 @@
+sharebox
+========
+
+Le projet ShareBox
